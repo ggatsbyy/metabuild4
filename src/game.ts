@@ -137,7 +137,7 @@ const videoStream10 = new Entity('videoStream10')
 engine.addEntity(videoStream10)
 videoStream10.setParent(_scene)
 const transform12 = new Transform({
-  position: new Vector3(4, 1.5, 0.5),
+  position: new Vector3(4, 2, 0.5),
   rotation: new Quaternion(-3.768626188703885e-15, -1, 1.1920928955078125e-7, -1.1920927533992653e-7),
   scale: new Vector3(1.0000057220458984, 1, 1.0000057220458984)
 })
