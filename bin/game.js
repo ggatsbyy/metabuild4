@@ -6996,7 +6996,7 @@ const videoStream = new Entity('videoStream')
 engine.addEntity(videoStream)
 videoStream.setParent(_scene)
 const transform15 = new Transform({
-  position: new Vector3(1.5, 2, 7),
+  position: new Vector3(2, 2, 8),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
@@ -7006,7 +7006,7 @@ const barbacue = new Entity('barbacue')
 engine.addEntity(barbacue)
 barbacue.setParent(_scene)
 const transform16 = new Transform({
-  position: new Vector3(14, 18.5, 9),
+  position: new Vector3(14.5, 17.5, 6.5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
@@ -7021,7 +7021,7 @@ const industrialCouch = new Entity('industrialCouch')
 engine.addEntity(industrialCouch)
 industrialCouch.setParent(_scene)
 const transform17 = new Transform({
-  position: new Vector3(9.5, 13.5, 7.5),
+  position: new Vector3(15, 13.5, 7.5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
@@ -7036,7 +7036,7 @@ const soccerBall = new Entity('soccerBall')
 engine.addEntity(soccerBall)
 soccerBall.setParent(_scene)
 const transform18 = new Transform({
-  position: new Vector3(11.5, 5.5, 7),
+  position: new Vector3(11.5, 5, 7),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
@@ -7066,7 +7066,7 @@ const surfboard2 = new Entity('surfboard2')
 engine.addEntity(surfboard2)
 surfboard2.setParent(_scene)
 const transform20 = new Transform({
-  position: new Vector3(1, 5.5, 15.5),
+  position: new Vector3(1, 5.5, 12),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
@@ -7077,9 +7077,9 @@ const redBicycle = new Entity('redBicycle')
 engine.addEntity(redBicycle)
 redBicycle.setParent(_scene)
 const transform21 = new Transform({
-  position: new Vector3(7, 0, 15.5),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
+  position: new Vector3(2.5, 0, 15),
+  rotation: new Quaternion(-0.03224693238735199, -0.9935857653617859, -0.10630366951227188, -0.021145358681678772),
+  scale: new Vector3(1.0000020265579224, 1, 1.000002384185791)
 })
 redBicycle.addComponentOrReplace(transform21)
 const gltfShape9 = new GLTFShape("6ca825e8-3955-480f-867f-7a64af316e64/Bicycle_01/Bicycle_01.glb")
@@ -7107,7 +7107,7 @@ const sunflower = new Entity('sunflower')
 engine.addEntity(sunflower)
 sunflower.setParent(_scene)
 const transform23 = new Transform({
-  position: new Vector3(6.5, 10, 5),
+  position: new Vector3(6.5, 9.5, 5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
