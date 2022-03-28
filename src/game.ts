@@ -167,11 +167,127 @@ const videoStream = new Entity('videoStream')
 engine.addEntity(videoStream)
 videoStream.setParent(_scene)
 const transform15 = new Transform({
-  position: new Vector3(1.5, 2, 7),
+  position: new Vector3(1.5, 2, 7.5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
 videoStream.addComponentOrReplace(transform15)
+
+const barbacue = new Entity('barbacue')
+engine.addEntity(barbacue)
+barbacue.setParent(_scene)
+const transform16 = new Transform({
+  position: new Vector3(14, 18.5, 9),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+barbacue.addComponentOrReplace(transform16)
+const gltfShape5 = new GLTFShape("16888533-8bdd-4dc3-8694-738018f29133/Barbacue_01/Barbacue_01.glb")
+gltfShape5.withCollisions = true
+gltfShape5.isPointerBlocker = true
+gltfShape5.visible = true
+barbacue.addComponentOrReplace(gltfShape5)
+
+const industrialCouch = new Entity('industrialCouch')
+engine.addEntity(industrialCouch)
+industrialCouch.setParent(_scene)
+const transform17 = new Transform({
+  position: new Vector3(9.5, 13.5, 7.5),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+industrialCouch.addComponentOrReplace(transform17)
+const gltfShape6 = new GLTFShape("6ef496c2-4ccd-49ab-a12f-6c9c25b6f92c/Couch_02/Couch_02.glb")
+gltfShape6.withCollisions = true
+gltfShape6.isPointerBlocker = true
+gltfShape6.visible = true
+industrialCouch.addComponentOrReplace(gltfShape6)
+
+const soccerBall = new Entity('soccerBall')
+engine.addEntity(soccerBall)
+soccerBall.setParent(_scene)
+const transform18 = new Transform({
+  position: new Vector3(11.5, 5.5, 7),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+soccerBall.addComponentOrReplace(transform18)
+const gltfShape7 = new GLTFShape("44e7b413-1f33-43bc-bada-96659b75bd86/PlaygroundBall_01/PlaygroundBall_01.glb")
+gltfShape7.withCollisions = true
+gltfShape7.isPointerBlocker = true
+gltfShape7.visible = true
+soccerBall.addComponentOrReplace(gltfShape7)
+
+const surfboard = new Entity('surfboard')
+engine.addEntity(surfboard)
+surfboard.setParent(_scene)
+const transform19 = new Transform({
+  position: new Vector3(0.9999999403953552, 5.5, 13),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+surfboard.addComponentOrReplace(transform19)
+const gltfShape8 = new GLTFShape("87449055-9033-4ac4-8125-c78831f751d4/SurfBoard_01/SurfBoard_01.glb")
+gltfShape8.withCollisions = true
+gltfShape8.isPointerBlocker = true
+gltfShape8.visible = true
+surfboard.addComponentOrReplace(gltfShape8)
+
+const surfboard2 = new Entity('surfboard2')
+engine.addEntity(surfboard2)
+surfboard2.setParent(_scene)
+const transform20 = new Transform({
+  position: new Vector3(1, 5.5, 15.5),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+surfboard2.addComponentOrReplace(transform20)
+surfboard2.addComponentOrReplace(gltfShape8)
+
+const redBicycle = new Entity('redBicycle')
+engine.addEntity(redBicycle)
+redBicycle.setParent(_scene)
+const transform21 = new Transform({
+  position: new Vector3(7, 0, 15.5),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+redBicycle.addComponentOrReplace(transform21)
+const gltfShape9 = new GLTFShape("6ca825e8-3955-480f-867f-7a64af316e64/Bicycle_01/Bicycle_01.glb")
+gltfShape9.withCollisions = true
+gltfShape9.isPointerBlocker = true
+gltfShape9.visible = true
+redBicycle.addComponentOrReplace(gltfShape9)
+
+const plantedFern = new Entity('plantedFern')
+engine.addEntity(plantedFern)
+plantedFern.setParent(_scene)
+const transform22 = new Transform({
+  position: new Vector3(4.5, 0, 7.5),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+plantedFern.addComponentOrReplace(transform22)
+const gltfShape10 = new GLTFShape("e9d4e87b-8d5f-4f03-a2e5-044effa9147f/PlantPot_03/PlantPot_03.glb")
+gltfShape10.withCollisions = true
+gltfShape10.isPointerBlocker = true
+gltfShape10.visible = true
+plantedFern.addComponentOrReplace(gltfShape10)
+
+const sunflower = new Entity('sunflower')
+engine.addEntity(sunflower)
+sunflower.setParent(_scene)
+const transform23 = new Transform({
+  position: new Vector3(6.5, 10, 5),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+sunflower.addComponentOrReplace(transform23)
+const gltfShape11 = new GLTFShape("c5124c22-c518-45a6-8b9a-2f749e8de161/Flower_04/Flower_04.glb")
+gltfShape11.withCollisions = true
+gltfShape11.isPointerBlocker = true
+gltfShape11.visible = true
+sunflower.addComponentOrReplace(gltfShape11)
 
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
