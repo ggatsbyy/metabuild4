@@ -97,7 +97,7 @@ const videoStream3 = new Entity('videoStream3')
 engine.addEntity(videoStream3)
 videoStream3.setParent(_scene)
 const transform8 = new Transform({
-  position: new Vector3(5.5, 2, 15.5),
+  position: new Vector3(6.5, 2, 15.5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
@@ -147,9 +147,9 @@ const videoStream11 = new Entity('videoStream11')
 engine.addEntity(videoStream11)
 videoStream11.setParent(_scene)
 const transform13 = new Transform({
-  position: new Vector3(0.5, 2, 2),
+  position: new Vector3(0.5, 2, 3),
   rotation: new Quaternion(-1.9455749640203465e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.0000057220458984, 1, 1.0000057220458984)
+  scale: new Vector3(1.0000061988830566, 1, 1.0000061988830566)
 })
 videoStream11.addComponentOrReplace(transform13)
 
@@ -173,6 +173,16 @@ const transform15 = new Transform({
 })
 ambientSound.addComponentOrReplace(transform15)
 
+const videoStream = new Entity('videoStream')
+engine.addEntity(videoStream)
+videoStream.setParent(_scene)
+const transform16 = new Transform({
+  position: new Vector3(2, 2, 10),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+videoStream.addComponentOrReplace(transform16)
+
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
 const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
@@ -191,3 +201,4 @@ script1.spawn(videoStream10, {"startOn":"false","onClickText":"Play video","volu
 script1.spawn(videoStream11, {"startOn":"false","onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream11","actionId":"toggle","values":{}}],"onActivate":[{"entityName":"videoStream11","actionId":"activate","values":{}}],"onDeactivate":[{"entityName":"videoStream11","actionId":"activate","values":{}}]}, createChannel(channelId, videoStream11, channelBus))
 script1.spawn(videoStream12, {"startOn":"false","onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream12","actionId":"toggle","values":{}}],"onActivate":[{"entityName":"videoStream12","actionId":"activate","values":{}}],"onDeactivate":[{"entityName":"videoStream12","actionId":"activate","values":{}}]}, createChannel(channelId, videoStream12, channelBus))
 script2.spawn(ambientSound, {"sound":"Birds","active":true,"loop":true}, createChannel(channelId, ambientSound, channelBus))
+script1.spawn(videoStream, {"startOn":"false","onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream","actionId":"toggle","values":{}}],"onActivate":[{"entityName":"videoStream","actionId":"activate","values":{}}],"onDeactivate":[{"entityName":"videoStream","actionId":"activate","values":{}}]}, createChannel(channelId, videoStream, channelBus))
