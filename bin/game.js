@@ -6922,95 +6922,85 @@ const transform7 = new Transform({
 })
 videoStream2.addComponentOrReplace(transform7)
 
-const videoStream3 = new Entity('videoStream3')
-engine.addEntity(videoStream3)
-videoStream3.setParent(_scene)
-const transform8 = new Transform({
-  position: new Vector3(6.5, 2, 15.5),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-videoStream3.addComponentOrReplace(transform8)
-
 const videoStream4 = new Entity('videoStream4')
 engine.addEntity(videoStream4)
 videoStream4.setParent(_scene)
-const transform9 = new Transform({
+const transform8 = new Transform({
   position: new Vector3(12, 2, 0.5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
-videoStream4.addComponentOrReplace(transform9)
+videoStream4.addComponentOrReplace(transform8)
 
 const videoStream5 = new Entity('videoStream5')
 engine.addEntity(videoStream5)
 videoStream5.setParent(_scene)
-const transform10 = new Transform({
+const transform9 = new Transform({
   position: new Vector3(12, 2, 15.5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
-videoStream5.addComponentOrReplace(transform10)
+videoStream5.addComponentOrReplace(transform9)
 
 const videoStream8 = new Entity('videoStream8')
 engine.addEntity(videoStream8)
 videoStream8.setParent(_scene)
-const transform11 = new Transform({
+const transform10 = new Transform({
   position: new Vector3(15.5, 2, 11),
   rotation: new Quaternion(4.731725943138074e-15, -0.70710688829422, 8.42937097900176e-8, 0.7071067690849304),
   scale: new Vector3(1.0000061988830566, 1, 1.0000061988830566)
 })
-videoStream8.addComponentOrReplace(transform11)
+videoStream8.addComponentOrReplace(transform10)
 
 const videoStream10 = new Entity('videoStream10')
 engine.addEntity(videoStream10)
 videoStream10.setParent(_scene)
-const transform12 = new Transform({
+const transform11 = new Transform({
   position: new Vector3(4, 2, 0.5),
   rotation: new Quaternion(-3.768626188703885e-15, -1, 1.1920928955078125e-7, -1.1920927533992653e-7),
   scale: new Vector3(1.0000057220458984, 1, 1.0000057220458984)
 })
-videoStream10.addComponentOrReplace(transform12)
+videoStream10.addComponentOrReplace(transform11)
 
 const videoStream11 = new Entity('videoStream11')
 engine.addEntity(videoStream11)
 videoStream11.setParent(_scene)
-const transform13 = new Transform({
-  position: new Vector3(0.5, 2, 3),
+const transform12 = new Transform({
+  position: new Vector3(0, 2, 3.5),
   rotation: new Quaternion(-1.9455749640203465e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.0000061988830566, 1, 1.0000061988830566)
+  scale: new Vector3(1.0000064373016357, 1, 1.0000064373016357)
 })
-videoStream11.addComponentOrReplace(transform13)
+videoStream11.addComponentOrReplace(transform12)
 
 const videoStream12 = new Entity('videoStream12')
 engine.addEntity(videoStream12)
 videoStream12.setParent(_scene)
-const transform14 = new Transform({
+const transform13 = new Transform({
   position: new Vector3(0.5, 6, 6),
   rotation: new Quaternion(4.731725943138074e-15, -0.70710688829422, 8.42937097900176e-8, 0.7071067690849304),
   scale: new Vector3(1.0000073909759521, 1, 1.0000073909759521)
 })
-videoStream12.addComponentOrReplace(transform14)
+videoStream12.addComponentOrReplace(transform13)
 
 const ambientSound = new Entity('ambientSound')
 engine.addEntity(ambientSound)
 ambientSound.setParent(_scene)
-const transform15 = new Transform({
+const transform14 = new Transform({
   position: new Vector3(0.5, 0, 10),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
-ambientSound.addComponentOrReplace(transform15)
+ambientSound.addComponentOrReplace(transform14)
 
 const videoStream = new Entity('videoStream')
 engine.addEntity(videoStream)
 videoStream.setParent(_scene)
-const transform16 = new Transform({
-  position: new Vector3(2, 2, 10),
+const transform15 = new Transform({
+  position: new Vector3(1.5, 2, 8),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
-videoStream.addComponentOrReplace(transform16)
+videoStream.addComponentOrReplace(transform15)
 
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
@@ -7022,7 +7012,6 @@ const script2 = new Script2()
 script1.init(options)
 script2.init(options)
 script1.spawn(videoStream2, {"startOn":"false","onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream2","actionId":"toggle","values":{}}],"onActivate":[{"entityName":"videoStream2","actionId":"activate","values":{}}],"onDeactivate":[{"entityName":"videoStream2","actionId":"activate","values":{}}]}, createChannel(channelId, videoStream2, channelBus))
-script1.spawn(videoStream3, {"startOn":"false","onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream3","actionId":"toggle","values":{}}],"onActivate":[{"entityName":"videoStream3","actionId":"activate","values":{}}],"onDeactivate":[{"entityName":"videoStream3","actionId":"activate","values":{}}]}, createChannel(channelId, videoStream3, channelBus))
 script1.spawn(videoStream4, {"startOn":"false","onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream4","actionId":"toggle","values":{}}],"onActivate":[{"entityName":"videoStream4","actionId":"activate","values":{}}],"onDeactivate":[{"entityName":"videoStream4","actionId":"activate","values":{}}]}, createChannel(channelId, videoStream4, channelBus))
 script1.spawn(videoStream5, {"startOn":"false","onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream5","actionId":"toggle","values":{}}],"onActivate":[{"entityName":"videoStream5","actionId":"activate","values":{}}],"onDeactivate":[{"entityName":"videoStream5","actionId":"activate","values":{}}]}, createChannel(channelId, videoStream5, channelBus))
 script1.spawn(videoStream8, {"startOn":"false","onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoStream8","actionId":"toggle","values":{}}],"onActivate":[{"entityName":"videoStream8","actionId":"activate","values":{}}],"onDeactivate":[{"entityName":"videoStream8","actionId":"activate","values":{}}]}, createChannel(channelId, videoStream8, channelBus))
