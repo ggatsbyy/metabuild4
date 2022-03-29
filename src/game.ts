@@ -167,7 +167,7 @@ const videoStream = new Entity('videoStream')
 engine.addEntity(videoStream)
 videoStream.setParent(_scene)
 const transform15 = new Transform({
-  position: new Vector3(2, 2, 8),
+  position: new Vector3(2, 2, 7.5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
@@ -192,7 +192,7 @@ const industrialCouch = new Entity('industrialCouch')
 engine.addEntity(industrialCouch)
 industrialCouch.setParent(_scene)
 const transform17 = new Transform({
-  position: new Vector3(15, 13.5, 7.5),
+  position: new Vector3(15, 13, 7.5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
@@ -222,9 +222,9 @@ const surfboard = new Entity('surfboard')
 engine.addEntity(surfboard)
 surfboard.setParent(_scene)
 const transform19 = new Transform({
-  position: new Vector3(0.9999999403953552, 5.5, 13),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
+  position: new Vector3(1, 5.5, 13),
+  rotation: new Quaternion(0, 0, 0.0980171486735344, 0.9951847195625305),
+  scale: new Vector3(0.9999999403953552, 0.9999999403953552, 1)
 })
 surfboard.addComponentOrReplace(transform19)
 const gltfShape8 = new GLTFShape("87449055-9033-4ac4-8125-c78831f751d4/SurfBoard_01/SurfBoard_01.glb")
@@ -233,61 +233,61 @@ gltfShape8.isPointerBlocker = true
 gltfShape8.visible = true
 surfboard.addComponentOrReplace(gltfShape8)
 
-const surfboard2 = new Entity('surfboard2')
-engine.addEntity(surfboard2)
-surfboard2.setParent(_scene)
-const transform20 = new Transform({
-  position: new Vector3(1, 5.5, 12),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-surfboard2.addComponentOrReplace(transform20)
-surfboard2.addComponentOrReplace(gltfShape8)
-
-const redBicycle = new Entity('redBicycle')
-engine.addEntity(redBicycle)
-redBicycle.setParent(_scene)
-const transform21 = new Transform({
-  position: new Vector3(2.5, 0, 15),
-  rotation: new Quaternion(-0.03224693238735199, -0.9935857653617859, -0.10630366951227188, -0.021145358681678772),
-  scale: new Vector3(1.0000020265579224, 1, 1.000002384185791)
-})
-redBicycle.addComponentOrReplace(transform21)
-const gltfShape9 = new GLTFShape("6ca825e8-3955-480f-867f-7a64af316e64/Bicycle_01/Bicycle_01.glb")
-gltfShape9.withCollisions = true
-gltfShape9.isPointerBlocker = true
-gltfShape9.visible = true
-redBicycle.addComponentOrReplace(gltfShape9)
-
 const plantedFern = new Entity('plantedFern')
 engine.addEntity(plantedFern)
 plantedFern.setParent(_scene)
-const transform22 = new Transform({
+const transform20 = new Transform({
   position: new Vector3(4.5, 0, 7.5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
-plantedFern.addComponentOrReplace(transform22)
-const gltfShape10 = new GLTFShape("e9d4e87b-8d5f-4f03-a2e5-044effa9147f/PlantPot_03/PlantPot_03.glb")
-gltfShape10.withCollisions = true
-gltfShape10.isPointerBlocker = true
-gltfShape10.visible = true
-plantedFern.addComponentOrReplace(gltfShape10)
+plantedFern.addComponentOrReplace(transform20)
+const gltfShape9 = new GLTFShape("e9d4e87b-8d5f-4f03-a2e5-044effa9147f/PlantPot_03/PlantPot_03.glb")
+gltfShape9.withCollisions = true
+gltfShape9.isPointerBlocker = true
+gltfShape9.visible = true
+plantedFern.addComponentOrReplace(gltfShape9)
 
 const sunflower = new Entity('sunflower')
 engine.addEntity(sunflower)
 sunflower.setParent(_scene)
-const transform23 = new Transform({
+const transform21 = new Transform({
   position: new Vector3(6.5, 9.5, 5),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
-sunflower.addComponentOrReplace(transform23)
-const gltfShape11 = new GLTFShape("c5124c22-c518-45a6-8b9a-2f749e8de161/Flower_04/Flower_04.glb")
+sunflower.addComponentOrReplace(transform21)
+const gltfShape10 = new GLTFShape("c5124c22-c518-45a6-8b9a-2f749e8de161/Flower_04/Flower_04.glb")
+gltfShape10.withCollisions = true
+gltfShape10.isPointerBlocker = true
+gltfShape10.visible = true
+sunflower.addComponentOrReplace(gltfShape10)
+
+const redBicycle = new Entity('redBicycle')
+engine.addEntity(redBicycle)
+redBicycle.setParent(_scene)
+const transform22 = new Transform({
+  position: new Vector3(2.5, 0, 15),
+  rotation: new Quaternion(-5.84227022315531e-9, -0.9951847791671753, -0.09801702946424484, 5.931762814270769e-8),
+  scale: new Vector3(1.000002145767212, 0.9999999403953552, 1.0000017881393433)
+})
+redBicycle.addComponentOrReplace(transform22)
+const gltfShape11 = new GLTFShape("6ca825e8-3955-480f-867f-7a64af316e64/Bicycle_01/Bicycle_01.glb")
 gltfShape11.withCollisions = true
 gltfShape11.isPointerBlocker = true
 gltfShape11.visible = true
-sunflower.addComponentOrReplace(gltfShape11)
+redBicycle.addComponentOrReplace(gltfShape11)
+
+const surfboard3 = new Entity('surfboard3')
+engine.addEntity(surfboard3)
+surfboard3.setParent(_scene)
+surfboard3.addComponentOrReplace(gltfShape8)
+const transform23 = new Transform({
+  position: new Vector3(1, 5.5, 12),
+  rotation: new Quaternion(0, 0, 0.0980171486735344, 0.9951847195625305),
+  scale: new Vector3(0.9999999403953552, 0.9999999403953552, 1)
+})
+surfboard3.addComponentOrReplace(transform23)
 
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
